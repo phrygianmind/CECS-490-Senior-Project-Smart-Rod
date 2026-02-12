@@ -2,7 +2,6 @@
 
 A rod-mounted fishing telemetry system that logs casts and distance, detects bite-like motion, and stores sessions for later review. Built around an ESP32-class MCU with a compact on-rod UI and optional Bluetooth sync.
 
----
 
 ## Overview
 
@@ -12,7 +11,6 @@ A rod-mounted fishing telemetry system that logs casts and distance, detects bit
 - Local session logging with optional Bluetooth sync to a phone app.
 - Designed for student-friendly fabrication (3D printing/basic CNC) and serviceable sealing (gaskets/O-rings).
 
----
 
 ## Features
 
@@ -23,7 +21,6 @@ A rod-mounted fishing telemetry system that logs casts and distance, detects bit
 - **Connectivity (optional):** BLE sync to a smartphone app.
 - **Export:** CSV/GPX output for analysis and sharing (via app/export flow).
 
----
 
 ## Hardware & Tools
 
@@ -35,7 +32,6 @@ A rod-mounted fishing telemetry system that logs casts and distance, detects bit
 - **Firmware:** Arduino IDE + VS Code (PlatformIO optional)
 - **Version Control/CI:** GitHub
 
----
 
 ## Project Structure
 
@@ -45,7 +41,6 @@ A rod-mounted fishing telemetry system that logs casts and distance, detects bit
 - `app/` — mobile companion app (sync + export)
 - `docs/` — requirements, acceptance tests, field test plans
 
----
 
 ## Architecture
 
@@ -54,7 +49,6 @@ A rod-mounted fishing telemetry system that logs casts and distance, detects bit
 - **UI pipeline:** Session status → LCD + buttons  
 - **Data pipeline:** Session logs → local storage → (optional) BLE sync → export (CSV/GPX)
 
----
 
 ## Build & Run
 
@@ -65,14 +59,12 @@ A rod-mounted fishing telemetry system that logs casts and distance, detects bit
   - Session storage and retrieval
   - Optional BLE sync reliability
 
----
 
 ## Testing
 
 - **Bench:** spool mark counting consistency, IMU event detection tuning, UI readability, battery runtime.
 - **Field:** cast logging percentage, distance accuracy targets, session retrieval, optional BLE sync success rate.
 
----
 
 ## Notable Design Choices
 
@@ -81,14 +73,10 @@ A rod-mounted fishing telemetry system that logs casts and distance, detects bit
 - **Serviceable waterproofing:** gaskets/O-rings prioritized over heavy potting for rework and maintenance.
 - **MVP-first scope:** core logging + alerts + UI + storage before higher-level mapping features.
 
----
-
 ## Roadmap
 
 - **MVP:** cast detection + distance, IMU alerts, LCD status, local storage, optional BLE sync
 - **Stretch:** bobber position estimation (distance + GPS/direction), richer analytics, refined chassis, deeper exports
-
----
 
 ## Credits
 
