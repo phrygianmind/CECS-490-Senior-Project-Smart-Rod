@@ -13,6 +13,8 @@ LCD1602 (4-bit parallel) for distance + bar display
 Wiring summary
 Power (common ground)
 
+ESP32 VN →  5V Rail
+
 ESP32 3V3 → TCS34725 VIN
 
 ESP32 3V3 → BNO085 VIN
@@ -61,13 +63,13 @@ LCD RW → GND
 
 LCD VSS → GND
 
-LCD VDD → 5V (typical) or 3V3 (can be dim)
+LCD VDD → 5V rail
 
 Contrast (VO)
 
-Recommended: 10k pot
+10k/5k pot
 
-one end → 5V
+one end → 5V rail
 
 other end → GND
 
